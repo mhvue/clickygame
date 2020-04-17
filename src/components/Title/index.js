@@ -15,7 +15,7 @@ function Title(props) {
                 <p className="lead text-center">Click on an image of your fave candies. Don't cick on it twice 
                 else you lose some points!</p>
           
-            
+            <br></br>
                 <h3>Your Score:</h3>
             
             </div>

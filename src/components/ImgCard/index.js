@@ -4,9 +4,13 @@ import "./style.css";
 function ImgCard(props){
     return(
             <div className="cardHolder">
-            
-                <img className ="images" alt={props.name} src={props.image} />
-            
+                <img 
+                id={props.id}
+                className ="images" 
+                alt={props.name} 
+                src={props.image} 
+                onClick={() => props.shuffleImgs} 
+                />
             </div>
 
 
