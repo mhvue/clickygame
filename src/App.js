@@ -14,35 +14,34 @@ state = {
   highscore: 0,
 };
 
-
-
 clickedImg= (id) => {
     const valClickedImgs = this.state.clickedImgs
     console.log(valClickedImgs)
 
-
   // console.log(valClickedImgs.includes())
     
-// if the same = pts go down
+
   if(valClickedImgs.includes(id)){
     console.log("clicked id: " + id)
     alert("same")
+    // if the same = score goes to 0
     this.setState({score: 0})
   }
   else if (!valClickedImgs.includes(id)){
     alert("not same")
     valClickedImgs.push(id)
-    this.setState({count: + 1})
-
+    //score go up if ids the same
+    this.setState({score: this.state.score + 1}, () => console.log(this.state.score));
+    //high score here 
+    this.setState({highscore: this.state.score})
+  
   }
-
   else{
     console.log(valClickedImgs)
   }
   
 }
 
-updateScore = () => this.setState(pre => ({ count: pre.count +1}));
 
 render() {
     return (
