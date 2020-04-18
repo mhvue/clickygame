@@ -1,0 +1,22 @@
+h3{
+    text-align: center;
+}
+
+.jumbotron{
+    background-image: url("https://images.unsplash.com/photo-1532117364815-720cd35ff6e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+
+}
+
+h1{
+    /* text-shadow: 2px 2px 5px orangered; */
+    position: relative;
+    bottom: 60px;
+    font-family: 'Lobster', cursive;
+}
+p{
+   
+    font-size: 30px;
+    position: relative;
+    bottom: 60px;
+    
+}

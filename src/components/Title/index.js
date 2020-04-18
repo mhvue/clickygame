@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./TitleStyle.css";
 
 function Title(props) {
     return (
@@ -12,7 +12,7 @@ function Title(props) {
         <div className="jumbotron jumbotron-fluid">
             <div className="container">
                 <h1 className="display-4 text-center">Time For Some Candy!</h1>
-                <p className="lead text-center">Click on an image of your fave candies. Don't cick on it twice 
+                <p className="lead text-center">Click on an image of your fave candies. Don't click on it twice 
                 else you lose some points!</p>
           
             <br></br>
