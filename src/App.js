@@ -26,11 +26,12 @@ clickedImg= (id) => {
     console.log("clicked id: " + id)
     alert("same")
     this.state.candyImg.sort(()=> Math.random() - 0.5)
-    this.setState({score: +1 })
+    this.setState({score: -1 })
   }
   else if (!valClickedImgs.includes(id)){
     alert("not same")
     valClickedImgs.push(id)
+    this.setState({score: +1})
   }
   else{
     console.log(valClickedImgs)
@@ -41,7 +42,7 @@ clickedImg= (id) => {
 render() {
     return (
       <div>
-      <Title />
+      <Title score={this.state.score}/>
       {this.state.candyImg.map((candy) => (
       <ImgCard
         key={candy.id}
