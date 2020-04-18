@@ -4,18 +4,21 @@
         "id": 1,
         "name": "chocolate1",
         "image": "https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+        
     },
   
     {
         "id": 2,
         "name": "chocolateRasp",
         "image": "https://images.unsplash.com/photo-1565071559227-20ab25b7685e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    
     },
      
     {
         "id": 3,
         "name": "chocolateNut",
         "image": "https://images.unsplash.com/photo-1542843137-8791a6904d14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    
     },
   
     {

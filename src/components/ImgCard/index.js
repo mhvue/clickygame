@@ -9,8 +9,9 @@ function ImgCard(props){
                 className ="images" 
                 alt={props.name} 
                 src={props.image} 
-                onClick={() => props.shuffleImgs} 
+                onClick={() => props.clickedMethod(props.id)}
                 />
+            
             </div>
 
 

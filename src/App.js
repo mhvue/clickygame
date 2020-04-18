@@ -1,52 +1,64 @@
 import React, {Component} from "react";
-import ShowImg from "./components/ImgCard";
+import ImgCard from "./components/ImgCard";
 import candyImg from "./components/Images";
 import Title from "./components/Title";
+
+
 
 class App extends Component {
 
 state = {
-  candyImg
+  candyImg,
+  clickedImgs: [],
+  score: 0
 };
 
-//Fisher Yates Method
- shuffleMethod = (array) =>  {
-   let i, j, k; 
-  for (i = array.length -1; i > 0; i--) {
-    j = Math.floor(Math.random() * i)
-    k = array[i]
-    array[i] = array[j]
-    array[j] = k
+
+
+clickedImg= (id) => {
+    const valClickedImgs = this.state.clickedImgs
+    console.log(valClickedImgs)
+
+  // console.log(valClickedImgs.includes())
+    
+// if the same = pts go down
+  if(valClickedImgs.includes(id)){
+    console.log("clicked id: " + id)
+    alert("same")
+    this.state.candyImg.sort(()=> Math.random() - 0.5)
+    this.setState({score: +1 })
+  }
+  else if (!valClickedImgs.includes(id)){
+    alert("not same")
+    valClickedImgs.push(id)
+  }
+  else{
+    console.log(valClickedImgs)
   }
 
-  return array;
-  }
-
-
-shuffleImgs = () => {
-  const candyImg = this.state.candyImg.shuffleMethod(this.state.candyImg)
-  this.setState(candyImg);
-};
-
+}
 
 render() {
     return (
       <div>
       <Title />
-      {this.state.candyImg.map((candy,index) => (
-      <ShowImg 
+      {this.state.candyImg.map((candy) => (
+      <ImgCard
         key={candy.id}
         id={candy.id}
         name={candy.name}
         image={candy.image}
-        shuffle={this.shuffleImgs}
+        clickedMethod={this.clickedImg}
       />
-      ))}
+      ))
+      .sort(()=> Math.random() - 0.5)} 
+      {/* credit to tutor for .sort above */}
       </div>
     );
   }
  
 }
+
 
 
 export default App;
