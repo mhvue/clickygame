@@ -16,7 +16,8 @@ function Title(props) {
                 else you lose some points!</p>
           
             <br></br>
-                <h3>Your Score:{props.score}</h3>
+                <h3>Your Score: {props.score}</h3>
+                <h3>Top Score:{props.highscore}</h3>
             
             </div>
         </div>

@@ -35,8 +35,8 @@
     },
     {
         "id": 6,
-        "name": "MM",
-        "image": "https://images.unsplash.com/photo-1533602933119-70608e48905d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "name": "assortedCandy",
+        "image": "https://images.unsplash.com/photo-1513593854556-94df5c54a8d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     },
     
     {
