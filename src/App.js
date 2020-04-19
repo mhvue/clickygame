@@ -38,8 +38,9 @@ clickedImg= (id) => {
     message: "",
     })
   }
-  
 }
+//noticed that scores are a little off. Need to fix..
+
 
 render() {
     return (
