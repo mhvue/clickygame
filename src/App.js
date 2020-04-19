@@ -11,7 +11,7 @@ state = {
   candyImg,
   clickedImgs: [],
   score: 0,
-  highscore: 0,
+  highscore: "0",
   message: ""
 };
 
@@ -22,6 +22,7 @@ clickedImg= (id) => {
   if(valClickedImgs.includes(id)){
     this.setState({
       score: 0,
+      highscore: this.state.highscore,
       message: "...Image already clicked! Game Over. Click to start again."
     });
     //this is so we can empty the valCilckImgs array
@@ -34,8 +35,8 @@ clickedImg= (id) => {
     //score go up if ids NOT the same in array already 
     this.setState({
     score: this.state.score + 1,
-    highscore: this.state.score,
-    message: "",
+    highscore: this.state.score + 1,
+    message: ""
     })
   }
 }
