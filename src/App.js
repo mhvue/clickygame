@@ -17,20 +17,21 @@ state = {
 
 clickedImg= (id) => {
     const valClickedImgs = this.state.clickedImgs;
-    console.log(valClickedImgs)
-    
+  
+    //going to check if id is in valClickedImg array. If it is, score goes to 0
   if(valClickedImgs.includes(id)){
-    // if the same = score goes to 0
     this.setState({
       score: 0,
       message: "...Image already clicked! Game Over. Click to start again."
     });
+    //this is so we can empty the valCilckImgs array
     valClickedImgs.length =0;
     
   }
+  //else, if id not in array, push the id into the valClickedIMg array, score goes up 1, reset msg to empty string
   else{
     valClickedImgs.push(id)
-    //score go up if ids the same
+    //score go up if ids NOT the same in array already 
     this.setState({
     score: this.state.score + 1,
     highscore: this.state.score,

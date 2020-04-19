@@ -6,7 +6,6 @@ function ImgCard(props){
             <div className=".cardHolder container-fluid">
                 <img className="img-responsive"
                 id={props.id}
-                // className ="images" 
                 alt={props.name} 
                 src={props.image} 
                 onClick={() => props.clickedMethod(props.id)}

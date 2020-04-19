@@ -6,7 +6,8 @@ function Title(props) {
         <div className="container-header">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <a className="navbar-brand" href="/"><h2>Welcome!</h2></a>
-            <h2><b>Your Score:</b> {props.score} || <b>Top Score: </b> {props.highscore}</h2><h2 className="messageBox">{props.message}</h2>
+            <h2><b>Your Score:</b> {props.score} || <b>Top Score: </b> {props.highscore}</h2>
+            <h2 className="messageBox">{props.message}</h2>
             </nav>
 
         <br></br>
