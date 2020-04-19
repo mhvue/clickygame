@@ -3,8 +3,8 @@ import "./style.css";
 
 function ImgCard(props){
     return(
-            <div className="cardHolder container-fluid">
-                <img className=" img-responsive"
+            <div className=".cardHolder container-fluid">
+                <img className="img-responsive"
                 id={props.id}
                 // className ="images" 
                 alt={props.name} 
