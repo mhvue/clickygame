@@ -1,9 +1,10 @@
 # Time For Some Candy - Memory Game  
 This is the memory card game built with React.js. Check it out: https://mhvue.github.io/clickygame/
 
-<p align ="center"><br><img src="./src/images/title.png" width="400px"></p>
+<p align ="center"><br><img src="./src/images/title.png" width="700px"></p>
 
-<p align ="center">There is a scoreboard to track Your Score and the Top Score.<br><img src="./src/images/score.png"></p>
+There is a scoreboard to track Your Score and the Top Score.
+<p align ="center"><br><img src="./src/images/score.png"></p>
 
 <p align ="center">Click on images.It will get shuffled after each click. Don't forget which image you clicked on.<br><img src="./src/images/candyImgs.png" width="600px"></p>
 
