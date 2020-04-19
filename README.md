@@ -21,3 +21,4 @@ If same image clicked, the scores will reset and a message will pop up.<
 
 ## To Do:
 * The shuffle is not working properly. There are extra white spaces showing at random times.
+* Scores are off a bit. Need to debug.
