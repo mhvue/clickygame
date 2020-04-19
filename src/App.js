@@ -20,7 +20,6 @@ clickedImg= (id) => {
     console.log(valClickedImgs)
     
   if(valClickedImgs.includes(id)){
-    console.log(id)
     // if the same = score goes to 0
     this.setState({
       score: 0,
@@ -57,8 +56,7 @@ render() {
           name={candy.name}
           image={candy.image}
           clickedMethod={this.clickedImg}
-        />))}
-        {/* .sort(()=> Math.random() - 0.5)}  */}
+        />)).sort(()=> Math.random() - 0.5)}
         </div>
         
       </div>
