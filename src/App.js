@@ -21,8 +21,7 @@ clickedImg= (id) => {
     const valClickedImgs = this.state.clickedImgs;
   
     //going to check if id is in valClickedImg array. If it is, score goes to 0
-  if(valClickedImgs.includes(id) || valClickedImgs.length === 12){
-    console.log(valClickedImgs)
+  if(valClickedImgs.includes(id)){
     this.setState({
       score: 0,
       message: "...Image already clicked! Game Over. Click to start again.",
@@ -55,7 +54,6 @@ clickedImg= (id) => {
  if(valClickedImgs.length === 12){
     this.setState({
       score: 0,
-      // highscore: 0,
       winmsg: "Winner! You've got a good memory!"
     });
     valClickedImgs.length = 0;
