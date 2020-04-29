@@ -1,22 +1,17 @@
 .images, .img-responsive {
-    width: 20%;
-    float: left;
+    width: 60%;
     padding: 5px;
     margin: 15px;
     /* from w3 schools on box shadow */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.cardHolder{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    overflow: auto;
- } 
-
  .imgHolder {
-    width: 80%;
-    margin: auto;
+   width: 90%;
+   margin-left: 60px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   /* grid-template-rows: repeat(3, 5%); */
  }
 
 
