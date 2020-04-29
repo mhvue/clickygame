@@ -20,5 +20,5 @@ If same image clicked, the scores will reset and a message will pop up.<
 * Bootstrap
 
 ## To Do:
-* The shuffle is not working properly. There are extra white spaces showing at random times.
-* Scores are off a bit. Need to debug.
+* High Scores resets. Need to debug. 
+* Keep working on some styling for more centered images. 
